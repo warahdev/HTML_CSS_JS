@@ -1,0 +1,24 @@
+# 💜 Estudos de HTML, CSS e JavaScript
+Este repositório contém diversos conteúdos e exemplos práticos que estou estudando sobre HTML, CSS e JavaScript.
+## JavaScript
+Aqui estão as listas de exercício relacionados ao JavaScript:
+- Lista de exercícios 1
+- Lista de exercídios 2
+
+## Requisitos
+Requisitos básicos para a instação, configuração e execução para os exercícios:
+- Editor de código
+- Node.js
+
+## Instalação
+Para instalar, siga estas estapas:
+1. Clone o repositório da seguinte forma.
+```bash
+git clone <link> <pasta da lista especifica de exercicios>
+```
+2. Com o editor de código instalado, abra o arquivo .js por ele.
+<imagem>
+3. Dentro do editor de código abra a pasta que foi clonada e execute o arquivo .js dentro dela.
+<imagem>
+
+## Uso
