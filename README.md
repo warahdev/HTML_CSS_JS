@@ -22,3 +22,13 @@ git clone <link> <pasta da lista especifica de exercicios>
 <imagem>
 
 ## Uso
+Execute o arquivo .js e siga as instruções no terminal.
+Segue uma breve explicação sobre as opções do terminal:
+- 1 - Visualizar execução dos exercícios um por um.
+- 2 - Execução inteira dos 15 exercícios.
+
+Caso o usuário escolha a opção 1, irá aparecer as seguintes opções novas:
+- 1.1 - Qual exercício deseja executar?
+
+Mas caso o usuário escolha a opção 2, todos os exercicíos vão ser executados.
+
