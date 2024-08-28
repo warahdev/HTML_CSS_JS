@@ -21,8 +21,6 @@ git clone <link> <pasta da lista especifica de exercicios>
 
 ## ♡ Uso ◝(ᵔᗜᵔ)◜
 Dentro do editor de código abra a pasta que foi clonada e execute qual exercício deseja visualizar e executar, cada um está separado em um arquivo distinto.
+<imagem>
 
-   /ᐢ⑅ᐢ\   ♡   ₊˚  
-꒰ ˶• ༝ •˶꒱       ♡‧₊˚    ♡
-./づ~ :¨·.·¨:     ₊˚  
-           `·..·‘    ₊˚   ♡
+°❀⋆.ೃ࿔*:･ ⋆˚✿˖° (˵ •̀ ᴗ - ˵ ) ✧ ✩₊˚.⋆☾⋆⁺₊✧ <(˶ᵔᵕᵔ˶)> 𓏲 ๋࣭  ࣪ ˖
