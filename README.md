@@ -18,17 +18,6 @@ git clone <link> <pasta da lista especifica de exercicios>
 ```
 2. Com o editor de código instalado, abra o arquivo .js por ele.
 <imagem>
-3. Dentro do editor de código abra a pasta que foi clonada e execute o arquivo .js dentro dela.
-<imagem>
 
 ## Uso
-Execute o arquivo .js e siga as instruções no terminal.
-Segue uma breve explicação sobre as opções do terminal:
-- 1 - Visualizar execução dos exercícios um por um.
-- 2 - Execução inteira dos 15 exercícios.
-
-Caso o usuário escolha a opção 1, irá aparecer as seguintes opções novas:
-- 1.1 - Qual exercício deseja executar?
-
-Mas caso o usuário escolha a opção 2, todos os exercicíos vão ser executados.
-
+Dentro do editor de código abra a pasta que foi clonada e execute qual exercício deseja visualizar e executar, cada um está separado em um arquivo distinto.
