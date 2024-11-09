@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Tipo de cadastro de evento</h1>
+
+    <label for="genero">Genero:</label>
+    <select name="genero" id="genero">
+        <option value="masculino">Masculino</option>
+    </select>
+
+    <label for="data-nascimento">Data Nascimento</label>
+    <input type="date" id="data-nascimento" name="data-nascimento">
+
+    <label for="estado">Estados:</label>
+    <select name="estado" id="estado">
+        <option value="São Paulo">São Paulo</option>
+    </select>
+    <br>
+    <fieldset>
+        <legend>Preferências de Comunicação</legend>
+        <input type="checkbox" id="email-novidade" name="email-novidade" value="email-novidade">
+        <label for="email-novidade">Receber atualizações por email</label>
+        <br>
+
+        <input type="checkbox" id="sms-novidade" name="sms-novidade" value="sms-novidade">
+        <label for="sms-novidade">Receber atualizações por SMS</label>
+        <br>
+    </fieldset>
+    
+    <label for="foto-perfil">Foto de perfil:</label>
+    <input type="file" name="foto-perfil" id="foto-perfil">
+
+    <button>Castrar</button>
+    <input type="submit" value="">
+    
+</body>
+</html>
