@@ -3,8 +3,8 @@ Este repositório contém diversos conteúdos e exemplos práticos que estou est
 
 ## ♡ JavaScript (˶˃ ᵕ ˂˶) .ᐟ.ᐟ
 Aqui estão as listas de exercício relacionados ao JavaScript:
-* [Lista de exercícios 1](JS/Lista de exercícios 1)
-* [Lista de exercícios 2](JS/Lista de exercícios 2)
+* Lista de exercícios 1
+* Lista de exercícios 2
 
 ## ♡ Requisitos ˚ 𝜗𝜚˚⋆｡☆
 Requisitos básicos para a instação, configuração e execução para os exercícios:
