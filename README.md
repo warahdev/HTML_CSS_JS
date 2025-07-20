@@ -1,8 +1,10 @@
 # 💜 Estudos de HTML, CSS e JavaScript
 Este repositório contém diversos conteúdos e exemplos práticos que estou estudando sobre HTML, CSS e JavaScript.
+
 ## ♡ JavaScript (˶˃ ᵕ ˂˶) .ᐟ.ᐟ
 Aqui estão as listas de exercício relacionados ao JavaScript:
-- Lista de exercícios 1
+* [Lista de exercícios 1](JS/Lista de exercícios 1)
+* [Lista de exercícios 2](JS/Lista de exercícios 2)
 
 ## ♡ Requisitos ˚ 𝜗𝜚˚⋆｡☆
 Requisitos básicos para a instação, configuração e execução para os exercícios:
