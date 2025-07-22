@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form>
+        <label for="nomeUsuario">Nome: </label>
+        <input type="text" id="nomeUsuario" name="nome">
+
+        <br>
+
+        <label for="cidades">Informe sua cidade: </label>
+        <select id="cidades" name="cidades">
+            <option value="saoPaulo">São Paulo</option>
+            <option value="rioDeJaneiro">Rio de Janeiro</option>
+            <option value="curitiba">Curitiba</opti1on>
+        </select>
+
+        <br>
+
+        <textarea name="sonho" rows="5" cols="30">Conte um pouco sobre seu sonho. (˶˃ ᵕ ˂˶) .ᐟ.ᐟ</textarea>
+
+        <br>
+
+        <button type="button" onclick="alert('Nyann~')">₍^. .^₎Ⳋ</button>
+        
+        <br>
+        
+        <fieldset>
+            <legend>Sobre k-pop...</legend>
+            <label for="bias">Quem é seu bias?</label><br>
+            <input type="text" id="bias" name="bias" value="Ricky"><br>
+            <label for="ultimateBias">E quem é o seu ultimate bias?</label><br>
+            <input type="text" id="ultimateBias" name="ultimateBias" value="Niel"><br><br>
+            <input type="submit" value="Sumit">
+        </fieldset>
+
+        <br>
+
+        <label for="sanrio">Escolha um personagem:</label>
+        <input list="sanrio">
+        <datalist id="sanrio">
+            <option value="Hello Kitty">
+            <option value="My Melody">
+            <option value="Kuromi">
+            <option value="Cinnamoroll">
+        </datalist>
+
+    </form>
+</body>
+</html>
