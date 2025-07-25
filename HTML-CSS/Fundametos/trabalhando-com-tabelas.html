@@ -4,27 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com tabelas</title>
+    <style>
+        table {
+            border-color: lightpink;
+            font-family: Arial, Helvetica, sans-serif;
+            border: solid 1px lightpink;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: rgb(255, 233, 236);
+        }
+
+        thead {
+            background-color: rgb(240, 92, 114);
+            color: white;
+        }
+        tfoot {
+            background-color: rgb(255, 212, 217);
+        }
+    </style>
 </head>
 <body>
     <h1>Tabelas</h1>
     <p>O elemento <code>&lt;table&gt;</code> permite criarmos tabelas no HTML. Vejamos com alguns atributos também:</p>
-    <table summary="Essa tabela se refere a tabela dos alunos" border="1" width="200">
+    <table summary="Essa tabela se refere a tabela dos alunos" width="250" cellspacing="0">
         <caption>Escola Blabla</caption>
-        <tr>
-            <th>Nome</th>
-            <th>Nota</th>
-            <th>Turma</th>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>10</td>
-            <td>A</td>
-        </tr>
-        <tr>
-            <td>Carlos</td>
-            <td>6</td>
-            <td>C</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Turma</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>A</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>C</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>B</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Monica</td>
+                <td>F</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>A</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>C</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Gabriel</td>
+                <td>F</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total das notas</td>
+                <td>16</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
