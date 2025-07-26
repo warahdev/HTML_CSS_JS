@@ -14,5 +14,10 @@ let dados = [ // [] -> lista
         descricao: "Hello Kitty é uma gatinha branca muito popular. Ela adora tudo que é fofo e tem um coração muito gentil. Seus hobbies incluem tocar piano e fazer bolos.",
         aniversario: "1 de novembro"
     },
+    { // {} -> objetos
+        titulo: "Cinnamoroll",
+        descricao: "Cinnamoroll é um cachorrinho branco com orelhas longas que lhe permitem voar! Ele é tímido, mas muito amigável, e adora o café Cinnamon, onde ajuda a dona. Seu hobby é voar e tirar sonecas nas nuvens.",
+        aniversario: "6 de março"
+    },
     
 ];
