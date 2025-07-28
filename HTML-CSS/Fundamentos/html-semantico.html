@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semântico</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+
+        nav ul li a {
+            padding: 10px 15px;
+            color: purple;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        h1 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <header> <!-- Conteúdo do cabeçalho -->
+        <nav> <!-- Seção com links de navegação -->
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo principal -->
+        <section> <!-- Seção autônoma genérica de um documento -->
+            <h1>Hello Kitty e Seus Amigos: Um Universo Encantador da Sanrio</h1>
+            <h2>Introdução ao Universo Sanrio</h2>
+            <p>O universo da Hello Kitty é um dos mais icônicos do mundo dos personagens japoneses. Criada pela empresa Sanrio em 1974, Hello Kitty rapidamente conquistou corações ao redor do mundo com seu visual simples, doce e atemporal. Mas ela não está sozinha. Ao longo dos anos, a Sanrio desenvolveu um verdadeiro elenco de personagens encantadores, cada um com suas próprias histórias, personalidades e estilos.</p>
+            <blockquote>Esse grupo diversificado não só entretém crianças e adultos, mas também se tornou uma marca poderosa com produtos que vão desde material escolar até roupas, acessórios, cosméticos e até colaborações com marcas de luxo. Vamos conhecer melhor esse universo mágico e seus principais habitantes.</blockquote>
+        </section>
+        <figure>
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/7/7e/My_Melody_and_Kuromi_50th-20th_anniversary_art.png" alt="Kuromi de mãos dadas com a My Melody" style="width: 200px;">
+            <figcaption>Kuromi e My Melody comemorando o aniversário juntas.</figcaption>
+        </figure>
+        <picture>
+            <source srcset="https://static.wikia.nocookie.net/hellokitty/images/8/8d/Sanrio_Characters_Kuromi_Image016.png" media="(min-width: 800px)">
+            <img src="https://static.wikia.nocookie.net/hellokitty/images/0/06/Kuromi_acting_wildly_girly.png">
+        </picture>
+        <aside> <!-- Separado do conteúdo principal -->
+
+        </aside>
+    </main>
+    <footer> <!-- Parte inferior da página com conteúdos adicionais -->
+    </footer>
+</body>
+</html>
