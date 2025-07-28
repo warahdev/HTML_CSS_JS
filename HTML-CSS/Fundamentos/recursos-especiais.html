@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso especiais</title>
+    <style>
+        html {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        h1, #cute {
+            color: rgb(253, 124, 143);
+        }
+
+        code {
+            color: rgb(255, 110, 131);
+            background-color: #f0f0f0;
+        }
+
+        strong {
+            color: rgb(253, 124, 143);
+        }
+    </style>
+</head>
+<body>
+    <h1>Recursos especiais emm HTML 5</h1>
+    <h2>Lista selecionável</h2>
+    <p>Elemento <code>select</code>:</p>
+    <select name="sanrio">
+        <option value="">Hello Kitty</option>
+        <option value="">My Melody</option>
+        <option value="">Kuromi</option>
+        <option value="">Cinnamonroll</option>
+        <option value="">Keroppi</option>
+        <option value="">Pochacco</option>
+    </select>
+    
+    <p>Elemento <code>datalist</code>:</p>
+    <input list="sanrio" type="search" name="search">
+    <datalist id="sanrio">
+        <option>Hello Kitty</option>
+        <option>My Melody</option>
+        <option>Kuromi</option>
+        <option>Cinnamonroll</option>
+        <option>Keroppi</option>
+        <option>Pochacco</option>
+    </datalist>
+    
+    <p id="cute">. ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁.</p>
+
+    <h2>Seção interativa</h2>
+    <p>Elemento <code>details</code>:</p>
+    <details>
+        <summary><strong>Kuromi</strong> é o oposto travesso da My Melody...</summary>
+        <p>Ela também é uma coelha, mas usa um capuz preto com uma caveira rosa, tem uma personalidade punk e adora causar confusão</p>
+    </details>
+</body>
+</html>
