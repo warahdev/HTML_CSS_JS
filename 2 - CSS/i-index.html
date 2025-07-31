@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        ul li ul li {
+            background-color: lightpink;
+        }
+
+        #exemplo-id {
+            background-color: #c488de;
+        }
+
+        .exemplo-class {
+            background-color: #683e7a;
+            color: white;
+        }
+
+        * {
+            background-color: #f5d6ea;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selectors</h1>
+    <p>Seletores do CSS são responsáveis por determinar quais elementos do HTML receberão estilização</p>
+    <p>Tipos mais comuns:</p>
+    <ul>
+        <li><strong>Por tipo:</strong> busca elementos por uma tag HTML especifica.
+            <ul>
+                <li>Exemplo de seletor por tipo.</li>
+            </ul>
+        </li>
+
+        <li><strong>Por ID (#):</strong> busca elementos através do atributo "id".
+            <ul>
+                <li id="exemplo-id">Exemplo de seletor por id.</li>
+            </ul>
+        </li>
+
+        <li><strong>Por classe (.):</strong> busca elementos através do atributo "class".
+            <ul>
+                <li class="exemplo-class">Exemplo de seletor por classe.</li>
+            </ul>
+        </li>
+
+        <li><strong>Universal (*):</strong> seleciona todos os elementos HTML.</li>
+
+        <li><strong>Por atributo ([atrib]):</strong> seleciona elementos que possuem um atributo específico em nosso documento HTML ou/e buscar atributos com um valor específico.
+            <ul>
+                <li>Exemplo de seletor por tipo.</li>
+            </ul>
+        </li>
+    </ul>
+    
+</body>
+</html>
