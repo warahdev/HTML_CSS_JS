@@ -1,24 +1,39 @@
-# 💜 Estudos de HTML, CSS e JavaScript
-Este repositório é o meu cantinho de estudos e práticas de HTML, CSS e JavaScript! Aqui vou documentar meu aprendizado, armazenar exercícios e desafios enquanto mergulho no mundo do desenvolvimento web. A ideia é aprender cada tecnologia passo a passo.
+# ✨ Repositório de Estudos Web ✨
 
-## ♡ O que você vai encontrar por aqui?
-Este repositório está organizado para acompanhar meu progresso. Atualmente, você já encontra desafios de HTML e, em breve, terei também exercícios de CSS e, futuramente, projetos que integram JavaScript para dar vida às minhas páginas!
+Olá! Seja bem-vindo(a) ao meu cantinho de estudos! (´｡• ω •｡`)
 
-## ♡ Requisitos ˚ 𝜗𝜚˚⋆｡☆
-Para rodar os exercícios e desafios deste repositório, você vai precisar de:
-- Um editor de código (como VS Code, Sublime Text, etc.).
-- Um navegador web moderno (qualquer um serve, como Chrome, Firefox, Edge).
-- Para alguns exercícios de JavaScript mais avançados, pode ser útil ter o Node.js instalado.
+Este repositório é onde guardo todos os meus aprendizados e pequenos desafios relacionados a **HTML**, **CSS** e **JavaScript**. É como um diário de progresso, mas com códigos! (˶˃ ᵕ ˂˶) .ᐟ.ᐟ
 
-## ♡ Instalação ₊˚⊹♡
-Para instalar, siga estas estapas:
-1. Clone o repositório da seguinte forma:
-```bash
-git clone https://github.com/stl-maria/HTML_CSS_JS.git
-```
-2. Com o editor de código instalado, abra a pasta dos arquivos clonado.
+---
 
-## ♡ Uso ◝(ᵔᗜᵔ)◜
-Dentro da pasta clonada, navegue até o arquivo do exercício ou desafio que deseja visualizar. Basta abri-lo no seu navegador web ou editor de código para ver o resultado e o código-fonte! Cada projeto está separado em sua própria pasta para facilitar a organização.
+## 📂 Organização dos Arquivos
 
-# °❀⋆.ೃ࿔*:･ ⋆˚✿˖° (˵ •̀ ᴗ - ˵ ) ✧ ✩₊˚.⋆☾⋆⁺₊✧ <(˶ᵔᵕᵔ˶)> 𓏲 ๋࣭  ࣪ ˖
+Para manter tudo organizadinho e fácil de encontrar, separei os arquivos nas seguintes pastinhas:
+
+* **`html/`**: Aqui você encontra meus primeiros passos e experimentos com HTML.
+* **`css/`**: Nesta pasta, brinco com estilos e cores para deixar tudo visualmente agradável.
+* **`js/`**: Onde a mágica acontece! Esta pasta guarda meus estudos sobre a lógica e interatividade do JavaScript.
+* **`desafios/`**: Os desafios que encarei para testar e aprimorar meus conhecimentos.
+
+---
+
+## 💖 Como navegar
+
+Sinta-se à vontade para explorar e ver o que estou aprendendo! Se tiver alguma dica ou sugestão para me dar, pode abrir uma issue. Ficaria muito feliz em aprender com você! ⸜(｡˃ ᵕ ˂ )⸝♡
+
+---
+
+## 🌸 Meus objetivos
+
+Meu objetivo é continuar aprimorando minhas habilidades e, quem sabe, um dia criar projetos incríveis e poder ajudar os demais!
+
+Penso em poder complementar com um blog também... mas só daqui um tempo...
+
+Obrigado pela visita! (⸝⸝> ᴗ•⸝⸝)
+
+
+˚∧＿∧  　+        —̳͟͞͞💗
+(  •‿• )つ  —̳͟͞͞ 💗         —̳͟͞͞💗 +
+(つ　 <                —̳͟͞͞💗
+｜　 _つ      +  —̳͟͞͞💗         —̳͟͞͞💗 ˚
+`し´
