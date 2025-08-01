@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selectors</title>
     <style>
-        ul li ul li {
+        
+        ul li ul li { /* Por tipo */
             background-color: lightpink;
         }
 
-        #exemplo-id {
+        #exemplo-id { /* Por id */
             background-color: #c488de;
         }
 
-        .exemplo-class {
+        .exemplo-class {  /* Por classe */
             background-color: #683e7a;
             color: white;
         }
 
-        * {
+        * {  /* Seletor universal */
             background-color: #f5d6ea;
+        }
+
+        [title] {
+            background-color: aquamarine;
+        }
+
+        [title="exemplo-atrib-val"] {
+            background-color: rgb(112, 199, 252);
         }
     </style>
 </head>
@@ -50,7 +59,8 @@
 
         <li><strong>Por atributo ([atrib]):</strong> seleciona elementos que possuem um atributo específico em nosso documento HTML ou/e buscar atributos com um valor específico.
             <ul>
-                <li>Exemplo de seletor por tipo.</li>
+                <li title="exemplo-atrib">Exemplo de seletor por atributo.</li>
+                <li title="exemplo-atrib-val">Exemplo de seletor por atributo com valor especifico.</li>
             </ul>
         </li>
     </ul>
