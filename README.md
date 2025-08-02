@@ -32,8 +32,4 @@ Penso em poder complementar com um blog também... mas só daqui um tempo...
 Obrigado pela visita! (⸝⸝> ᴗ•⸝⸝)
 
 
-˚∧＿∧  　+        —̳͟͞͞💗
-(  •‿• )つ  —̳͟͞͞ 💗         —̳͟͞͞💗 +
-(つ　 <                —̳͟͞͞💗
-｜　 _つ      +  —̳͟͞͞💗         —̳͟͞͞💗 ˚
-`し´
+── .✦
