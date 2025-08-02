@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Combinator</title>
+    <style>
+
+        .fundo-verde li {  /* buscando a classe 'fundo-verde' que tenha o elemento <li> */
+            background-color: lightgreen;
+        }
+
+        .fundo-azul li {
+            background-color: lightblue;
+        }
+
+        .fundo-verde #sublista-01 li {  /* busca a classe 'fundo-verde' que tenha o id 'sublista-01' e o elemento <li> */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <uL>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-0">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 2</div>
+            <ul id="sublista-0">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </uL>
+</body>
+</html>
