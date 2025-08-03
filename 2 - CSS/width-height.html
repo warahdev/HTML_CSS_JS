@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width and Height</title>
+    <style>
+        code {
+            font-weight: bold;
+            background-color: #ffe2e7;
+            color: rgb(205, 76, 97);
+        }
+
+        .auto {  /* height automatico */
+            width: 300px;
+            background-color: lightpink;
+        }
+
+        .lenght {  /* altura fixa */
+            width: 300px;
+            height: 50px;
+            background-color: #eebaee;
+        }
+
+        .pai {  /* elemento pai para o filho-porcentagem */
+            width: 300px;
+            height: 100px;
+            background-color: #ffe2e7;
+        }
+
+        .filho-porcentagem {  /* fração das dimensões com base do elemento pai */
+            width: 70%;
+            height: 70%;
+            background-color: pink;
+        }
+
+        .pai-inherit {
+            width: 300px;
+            height: 150px;
+            background-color: #eebaee;
+            border: 2px solid black;
+        }
+
+        .filho-inherit {
+            width: inherit;
+            height: inherit;
+            background-color: #dc93dc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>5 - Width and Height</h1>
+    <div class="auto">
+        <p>Exemplo com <code>widht</code> fixo, porém com <code>height</code> em <code>auto</code>.</p>
+        <p>Inserindo mais texto para demonstrar que ele se ajuste automaticamente.</p>
+    </div>
+    <br>
+    <div class="lenght">
+        <p>Exemplo com valor fixo para <code>height</code>.</p>
+        <p>Se o texto não couber na altura determinada, o texto irá transbordar.</p>
+    </div>
+    <br>
+    <div class="pai">
+        <div class="filho-porcentagem">
+            <p>Exemplo com <code>%</code> para quando a altura será uma fração da altura do elemento pai.</p>
+        </div>
+    </div>
+    <br>
+    <div class="pai-inherit">
+        <p>Elemento pai</p>
+        <div class="filho-inherit">
+            <p>Exemplo com valor <code>inherit</code>, no qual o elemento herdará a altura do seu elemento pai.</p>
+        </div>
+
+    </div>
+</body>
+</html>
