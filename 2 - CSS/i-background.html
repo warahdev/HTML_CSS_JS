@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+        * {
+            width: 500px;
+        }
+
+        div {
+            margin-bottom: 30px
+        }
+
+        em {
+            color: rgb(193, 109, 218);
+            font-weight: bold;
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* propriedade background-image */
+        #linear-gradient {
+            background-image: linear-gradient(lightpink, palevioletred, purple);
+        }
+
+        #radial-gradient {
+            background-image: radial-gradient(lightpink, palevioletred, purple);
+        }
+
+        #repeating-linear {
+            background-image: repeating-linear-gradient(to top, palevioletred 0px 20px, lightpink 20px 40px);
+        }
+
+        /* propriedade background-size */
+        .outro-exemplo {
+            width: 300px;
+            height: 300px;
+            background-image: url(https://www.blippo.com/cdn/shop/articles/Kuromi-featured-2_0df03e45-cf23-481b-a57b-9365476de01c_1080x.jpg);
+        }
+
+        #cover {
+            background-size: cover;
+        }
+
+        #contain {
+            background-size: contain;
+        }
+
+        #largura {
+            background-size: 70%;
+        }
+
+        #largura-altura {
+            background-size: 250px 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>9 - Background Image + Size</h1>
+    <code>background-image: linear-gradient( <em>começa</em> , <em>meio</em> , <em>termina</em> )</code>
+    <div id="linear-gradient" class="exemplo"></div>
+
+    <code>background-image: radial-gradient ( <em>centro</em> , <em>meio</em> , <em>borda</em> )</code>
+    <div id="radial-gradient" class="exemplo"></div>
+
+    <code>background-image: repeating-linear-gradient( <em>onde começa</em> , <em>cor e tamanho</em>, <em>cor e tamanho</em> )</code>
+    <div id="repeating-linear" class="exemplo"></div>
+
+    <hr>
+
+    <!-- padrão -->
+    <code>background-size: auto;</code>
+    <div class="outro-exemplo"></div>
+
+    <code>background-size: cover;</code>
+    <div id="cover" class="outro-exemplo"></div>
+
+    <code>background-size: contain;</code>
+    <div id="contain" class="outro-exemplo"></div>
+
+    <code>background-size: <em>largura</em>;</code>
+    <div id="largura" class="outro-exemplo"></div>
+
+    <code>background-size: <em>largura e altura</em>;</code>
+    <div id="largura-altura" class="outro-exemplo"></div>
+</body>
+</html>
