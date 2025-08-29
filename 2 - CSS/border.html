@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        code {
+            background-color: rgb(254, 219, 255);
+            color: purple;
+        }
+        .exemplo {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border: 10px solid #da7cda;
+        }
+
+        #borda-arredondada {
+            border: 10px solid rgb(218, 124, 218);
+            border-radius: 15px;
+        }
+
+        #borda-diferente {
+            border-radius: 25px 0px 25px 0px;
+        }
+
+        #border-image {
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            border: 10px solid;
+            border-image: linear-gradient(purple, #da7cda) 10;
+        }
+    </style>
+</head>
+<body>
+    <h1>12 - Border</h1>
+
+    <p>Borda atalho padrão. <code>border: 10px solid #da7cda;</code></p>
+    <div class="exemplo"></div>
+
+    <p>Borda arredondada. <code>border-radius: 15px;</code></p>
+    <div class="exemplo" id="borda-arredondada"></div>
+
+    <p>Borda com cantos diferentes. <code>border-radius: 25px 0 25px 0;</code></p>
+    <div class="exemplo" id="borda-diferente"></div>
+
+    <p>Border Images. <code>border-radius: 25px 0 25px 0;</code></p>
+    <div id="border-image"></div>
+    
+</body>
+</html>
