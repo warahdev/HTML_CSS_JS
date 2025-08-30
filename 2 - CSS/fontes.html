@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+        * {
+            width: 800px;
+        }
+
+        .explicacao {
+            background-color: rgb(224, 224, 224);
+        }
+
+        #exemplo-padrao {
+            font-family: fantasy;
+        }
+
+        #exemplo-personalizado {
+            font-family: "Borel", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        #tamanho {
+            font-size: 30px;
+        }
+
+        #tamanho-palavra-chave {
+            font-size: small;
+        }
+
+        #atalho-font {
+            /* font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family] */
+            font: italic small-caps 700 1.2em/1.6em "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>13 - Fontes</h1>
+
+    <hr>
+    <h2>font-family</h2>
+
+    <p class="explicacao">Fonte já instalada no sistema operacional: </p>
+    <p id="exemplo-padrao"><strong>Hello Kitty:</strong> A protagonista de todo esse universo é a famosa Hello Kitty, cujo nome verdadeiro é Kitty White. Nascida em 1º de novembro em Londres, ela tem um laço vermelho na orelha esquerda, adora fazer bolinhos, tocar piano e passar o tempo com sua irmã gêmea, Mimmy.</p>
+
+    <p class="explicacao">Fonte cutomizada com @import url():</p>
+    <p id="exemplo-personalizado"><strong>Mimmy White:</strong> Mimmy é a irmã gêmea da Hello Kitty. A diferença mais notável entre as duas é o laço: Mimmy usa um laço amarelo na orelha direita. Ela é um pouco mais tímida e reservada do que Kitty, mas igualmente doce e leal. Juntas, elas compartilham muitas aventuras no dia a dia.</p>
+    
+    <hr>
+    <h2>font-size</h2>
+
+    <p class="explicacao">Alterando o tamanho da fonte com uma unidade de medida:</p>
+    <p id="tamanho"><strong>My Melody:</strong> My Melody é uma coelhinha branca que usa um capuz vermelho (às vezes rosa) que cobre suas orelhas. Ela nasceu na Floresta de Mary Land e adora assar biscoitos com sua mãe. My Melody é doce, gentil, sempre honesta e muito próxima de Hello Kitty.</p>
+
+    <p class="explicacao">Alterando o tamanho da fonte com palavra-chave (<code>xx-small/x-small/small/medium/large/x-large/xx-large</code>):</p>
+    <p id="tamanho-palavra-chave"><strong>Kuromi:</strong> Kuromi é o oposto travesso da My Melody. Ela também é uma coelha, mas usa um capuz preto com uma caveira rosa, tem uma personalidade punk e adora causar confusão. Apesar de parecer malvada, Kuromi é mais brincalhona do que perigosa. Muitas vezes, ela entra em encrencas por sua impulsividade e senso de humor ácido.</p>
+
+    <hr>
+
+    <h2>Atalho font</h2>
+
+    <p class="explicacao"><code>font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family]</code><br>OBS.: <code>font-size</code> e <code>font-family</code> são obrigatórias.</p>
+    <p id="atalho-font"><strong>Cinnamoroll:</strong> Cinnamoroll é um cachorrinho branco com grandes orelhas e um rabo que se assemelha a um rolinho de canela – daí o nome. Ele nasceu em uma nuvem e foi descoberto por uma dona de café enquanto flutuava no céu.</p>
+
+</body>
+</html>
