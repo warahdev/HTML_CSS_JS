@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+    <style>
+        code {
+            background-color: #dfdfdf;
+            color: purple;
+        }
+
+        #sombra-elemento {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(208, 126, 208);
+            border: 5px solid purple;
+            box-shadow: 10px 10px 5px #7c7c7c;
+        }
+
+        #sombra-imagem {
+            width: 300px;
+            filter: drop-shadow(15px 15px 5px #be7bbe);
+        }
+        
+        #sombra-texto {
+            width: 450px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            font-size: 20px;
+            text-shadow: 5px 5px 5px purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>15 - Sombras</h1>
+
+    <h2>Em elementos:</h2>
+
+    <code>box-shadow: 10px 10px 5px #7c7c7c;</code>
+    <p id="sombra-elemento"></p>
+
+    <br>
+    <code>filter: drop-shadow(15px 15px 5px #be7bbe);</code><br>
+    <img src="https://www.pngmart.com/files/23/Kuromi-PNG-Picture.png" id="sombra-imagem">
+
+    <h2>Em textos:</h2>
+    <p id="sombra-texto">O universo da Hello Kitty e seus amigos é muito mais do que apenas personagens fofos.</p>
+
+    
+</body>
+</html>
