@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+/* verde escuro-#2F5233 , verde claro-#8FBF7F , branco gelo-#F9F9F9 , bege areia-#E6DDC6 , cinza grafite-#333333 , laranja terroso-#E07A5F */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2F5233;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #8FBF7F;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    text-shadow: 0px 0px 10px black;
+}
+
+p {
+    color: #F9F9F9;
+}
+
+
+a {
+    text-decoration: none;
+    color: #8FBF7F;
+}
+
+strong {
+    color: #E07A5F;
+}
+
+section {
+    margin: 100px auto;
+}
+
+/*header*/
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(49,168,221,.2), rgba(0, 0, 0, 0.8)), url('../assets/imagem-header.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #8FBF7F;
+}
+
+.banner .banner-content {
+    color: #2F5233;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#8FBF7F, #2F5233);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin: 16px 0 24px;
+}
+
+.banner .banner-content-logo {
+    background-color: rgba(0, 0, 0, .2);
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.banner .banner-content-logo p {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#link-logo {
+    color: #F9F9F9;
+}
+
+.banner .banner-content button {
+    color: #E6DDC6;
+    font-size: 1rem;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: transparent;
+    background-image: linear-gradient(#8FBF7F, #2F5233);
+    border-image-slice: 10;
+    border-radius: 30px;
+
+}
+
+/* main */
+/* 1 */
+#conteudo-primeiros-passos {
+    width: 800px;
+    text-align: center;
+}
+
+#conteudo-primeiros-passos .dicas-lista {
+    margin: 24px 0;
+}
+
+#conteudo-primeiros-passos .dicas-lista .dica {
+    color:#333333;
+    width: 600px;
+    margin: 0 auto 24px;
+    border: 1px solid #2F5233;
+    background-color:#8FBF7F;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+/* 2 */
+#conteudo-definicao {
+    height: 400px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../assets/imagem-main.jpg');
+    background-attachment: fixed;
+    border-top: #8FBF7F;
+    border-bottom: #8FBF7F;
+    padding: 200px;
+
+}
+
+#conteudo-definicao p {
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+
+#conteudo-definicao #definicao-fonte {
+    font-size: small;
+}
+
+/* 3 */
+#conteudo-quebra-mitos {
+    text-align: center;
+    width: 800px;
+}
+
+/* 4 */
+#conteudo-depoimento {
+    text-align: center;
+    width: 800px;
+}
+
+/* footer */
+footer {
+    height: 50px;
+    font-size: small;
+    background-color: #333333;
+    padding: 60px 0;
+    text-align: center;
+    border-top: #8FBF7F;
+}
+
+
