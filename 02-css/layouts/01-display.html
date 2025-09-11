@@ -10,13 +10,65 @@
             color: #d7517d;
         }
 
-        .padrao-block {
-            border: 2px solid #d7517d;
+        h1 {
+            text-shadow: 0px 0px 5px rgb(125, 125, 125);
         }
 
-        .padrao-inline {
-            border: 2px solid #d7517d;
+        h2 {
+            margin-top: 50px;
+            color: #d7517d;
+            text-shadow: 0px 0px 5px #f99fbd;
         }
+
+        h3 {
+            color: #f99fbd;
+            text-shadow: 0px 0px 6px #f99fbd;
+        }
+
+        .exemplo, .inline-block {
+            border: 2px solid #d7517d;
+            padding: 10px;
+            width: 300px;
+            height: 100px;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            background-color: #d7517d;
+            margin-right: 20px;
+            width: 100px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        li a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        .exemplo-alinhamento {
+            border: 1px solid #d7517d;
+            font-size: medium;
+            text-align: center;
+        }
+
+        #item-1 {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        #item-2, #item-3 {
+            display: inline-block;
+            background-color: #f99fbd;
+            vertical-align: top;
+        }
+
     </style>
 </head>
 <body>
@@ -26,20 +78,47 @@
             O <code>display</code> é uma propriedade importante do CSS para controlar o layout. Determina se um elemento HTML é tratado como um <u>bloco</u> ou um <u>elemento em linha</u>.
         </p>
     </header>
+
     <main>
         <h2>Block</h2>
-        <p>Exemplo de elementos com o valor padrâo <code>display: block;</code>.</p>
-        <div class="padrao-block">Hello Kitty com seu laço vermelho a brilhar,</div>
-        <p class="padrao-block">Espalha alegria onde quer que vá chegar.</p>
+        <p>Exemplo de elementos com o valor padrâo <code>display: block;</code>.<br>Aceita as propriedades <code>width</code>, <code>height</code>, <code>padding</code> e <code>margin</code>.</p>
+        <div class="exemplo">Hello Kitty com seu laço vermelho a brilhar,</div>
+        <p class="exemplo">Espalha alegria onde quer que vá chegar.</p>
 
         <h2>Inline</h2>
-        <p>Exemplo de elementos com o valor padrâo <code>display: inline;</code>.</p>
+        <p>Exemplo de elementos com o valor padrâo <code>display: inline;</code>.<br><u>Não</u> aceita as propriedades <code>width</code>, <code>height</code>, <code>padding</code> e <code>margin</code>.</p>
         <p>
-            Com <span class="padrao-inline">sorriso doce</span>, coração de algodão,
-            Ensina ao mundo a <a href="" class="padrao-inline">força</a> da união.
+            Com <span class="exemplo">sorriso doce</span>, coração de algodão,<br>
+            Ensina ao mundo a <a href="" class="exemplo">força</a> da união.<br>
+            Mimmy, a gêmea, com laço amarelinho,<br>
+            Mais tímida e calma, segue seu caminho.
         </p>
+
+        <h2>Inline-block</h2>
+        <p>Semelhante a um elemento em linha, porém aceita as propriedades <code>width</code>, <code>height</code>, <code>padding</code> e <code>margin</code>.</p>
+        <p>
+            Juntas <span class="inline-block">descobrem que</span> a vida tem valor,<br>
+            Quando dividida com <span class="inline-block">carinho e amor</span>.
+        </p>
+
+        <h3>Exemplo: menu de navegação</h3>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+
+        <h2>Alinhamento vertical</h2>
+        <p>A propriedade <code>vertical-align</code> permite alinhar verticalmente os elementos. Porém <u>não</u> funciona em elementos <code>display: block;</code>.</p>
+        <div class="exemplo-alinhamento">
+            <img src="https://i.pinimg.com/736x/c8/b5/39/c8b5395cdcff7a87b412f0ad40078f3a.jpg" id="item-1">
+            <span id="item-2">teste 1</span>
+            <span id="item-3">teste 2</span>
+        </div>
+
     </main>
-    
 
 </body>
 </html>
