@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Position</title>
+    <style>
+        @import url(src/styles/global.css);
+
+        .exemplo{
+            width: 100px;
+            height: 100px;
+            margin: 0;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #item-1 {
+            background-color: palevioletred;
+        }
+
+        #item-2 {
+            background-color: lightpink;
+            position: relative;
+            top: 20px;
+            left: 15px;
+        }
+
+        #item-3 {
+            background-color: #ffdee3;
+        }
+
+        #item-4 {
+            background-color: plum;
+        }
+
+        #item-5 {
+            background-color: blueviolet;
+            position: absolute;
+            top: 550px;
+            right: 200px;
+        }
+
+        .card-image {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 1px solid blueviolet;
+            border-radius: 10px;
+        }
+
+        .card-image img {
+            margin-top: 5px;
+        }
+
+        .etiqueta {
+            border: 2px solid blueviolet;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #9576cc;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        #item-6 {
+            background-color: #bf9bff;
+            position: fixed;
+            top: 450px;
+            right: 0;
+        }
+
+        #item-7 {
+            background-color: #decaff;
+        }
+
+        #item-8 {
+            background-color: #f6a0bd;
+        }
+
+        #item-9 {
+            background-color: #ebcdda;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>02 - Position</h1>
+        <p>A propriedade <code>position</code> consiste em controlar o posicionamento de elementos dentro de uma página da web.</p>
+    </header>
+    <main>
+        <h2>static</h2>
+        <p>O valor de <code>position: static</code> é o padrão.</p>
+        <p>Exemplo aplicado: Item 1</p>
+        <div class="exemplo" id="item-1">Item 1</div>
+        
+        <h2>relative</h2>
+        <p>O <code>position: relative;</code> mantém sua posição original no fluxo normal da página. Possibilita a utilização das propriedades <code>top</code>, <code>right</code>, <code>bottom</code> e <code>left</code>.</p>
+        <p>Exemplo aplicado: Item 2</p>
+        <div class="exemplo" id="item-2">Item 2</div>
+        <div class="exemplo" id="item-3">Item 3</div>
+
+        <h2>absolute</h2>
+        <p>Já o <code>position: absolute;</code> é bem parecido com a propriedade anterior, porém ele não mantém sua posição original no fluxo da página, ele "flutua". Possibilita também a utilização das propriedades <code>top</code>, <code>right</code>, <code>bottom</code> e <code>left</code>.</p>
+        <p>Exemplo aplicado: Item 5</p>
+        <div class="exemplo" id="item-4">Item 4</div>
+        <div class="exemplo" id="item-5">Item 5</div>
+
+        <h3>Exemplo</h3>
+        <p>Juntando <code>relative</code> e <code>absolute</code>:</p>
+        <div class="card-image">
+            <img src="https://static.wikia.nocookie.net/fragaria-memories/images/8/88/Kuromi.png" alt="Personagem Kuromi">
+            <div class="etiqueta">Kuromi</div>
+        </div>
+
+        <h2>fixed</h2>
+        <p>Um elemento com <code>position: fixed;</code> está posicionado rem relação à janela de visualização e sempre permanece no mesmo lugar. Possibilita também a utilização das propriedades <code>top</code>, <code>right</code>, <code>bottom</code> e <code>left</code>.</p>
+        <p>Exemplo aplicado: Item 6</p>
+        <div class="exemplo" id="item-6">Item 6</div>
+        <div class="exemplo" id="item-7">Item 7</div>
+
+        <h2>sticky</h2>
+        <p>O <code>position: sticky;</code> só funciona com a propriedade <code>top</code> para que o efeito seja aplicado. Basicamente alterna entre o <code>relative</code> e o <code>fixed</code>, dependendo da posição de rolagem.</p>
+        <div class="exemplo" id="item-8">Item 8</div>
+        <div class="exemplo" id="item-9">Item 9</div>
+    </main>
+</body>
+</html>
