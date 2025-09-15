@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Flexbox</title>
+    <style>
+        @import url(src/styles/global.css);
+
+        .display-flex, .display-inline-flex {
+            height: 100px;
+            background-color: palevioletred;
+            padding: 10px;
+        }
+
+        .display-flex {
+            display: flex;
+        }
+
+        .item {
+            margin: 10px;
+            background-color: lightpink;
+        }
+
+        .display-inline-flex {
+            display: inline-flex;
+        }
+
+        #flex-direction-1 {
+            background-color: #ccd7fd;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        #flex-direction-2 {
+            background-color: #eadcff;
+            flex-direction: column-reverse;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>03 - Flexbox</h1>
+        <p>Simplifica o alinhamento e a distribuição do espaço entre os <u>itens</u> de um <u>contêiner</u>.</p>
+        <ul>
+            <li><strong>Contêiner</strong>: elemento pai que recebe a propriedade <code>display: flex;</code>.</li>
+            <li><strong>Itens</strong>: elementos filhos diretos do contêiner.</li>
+        </ul>
+    </header>
+    <main>
+        <h2>Flex</h2>
+        <p><code>display: flex;</code></p>
+        <div class="display-flex">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+        <div class="display-flex">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+
+        <br>
+
+        <p><code>display: inline-flex</code></p>
+        <div class="display-inline-flex">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+        <div class="display-inline-flex">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+
+        <h2>Propriedades do contêiner</h2>
+        <h3>flex-direction</h3>
+        <ul>
+            <li><code>row</code> (valor padrão)</li>
+            <li><code>row-reverse</code></li>
+            <li><code>column</code></li>
+            <li><code>column-reverse</code></li>
+        </ul>
+
+        <br>
+
+        <p>Exemplo: <code>flex-direction: column</code></p>
+        <div id="flex-direction-1">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+
+        <p>Exemplo: <code>flex-direction: column-reverse</code></p>
+
+        <div id="flex-direction-2">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+
+        <h3></h3>
+        
+    </main>
+</body>
+</html>
