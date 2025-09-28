@@ -29,14 +29,147 @@
 
         #flex-direction-1 {
             background-color: #ccd7fd;
-            flex-direction: column;
+            display: flex;
+            flex-direction: row;
             padding: 10px;
         }
 
         #flex-direction-2 {
             background-color: #eadcff;
-            flex-direction: column-reverse;
+            display: flex;
+            flex-direction: row-reverse;
             padding: 10px;
+        }
+
+        #nowrap ,#wrap {
+            width:350px;
+            height: 100px;
+            background-color: #ffd9e1;
+            display: flex;
+        }
+
+        #wrap {
+            flex-wrap: wrap;
+        }
+
+        #flex-flow {
+            width: 150px;
+            background-color: #864a71;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .justify-content {
+            width: 300px;
+            background-color: #eadcff;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between ;
+        }
+
+        #justify-content-linha {
+            flex-flow: row wrap;
+        }
+
+        #justify-content-coluna {
+            height: 200px;
+            flex-flow: column wrap;
+        }
+
+        .exemplos {
+            display: flex;
+            flex-direction: row;
+            width: 900px;
+            justify-content:space-between;
+        }
+
+        .align-itens {
+            width: 250px;
+            height: 250px;
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+       
+        #align-itens-linha {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #align-itens-coluna {
+            flex-direction: column;
+        }
+
+        .item-04 {
+            width: 40px;
+            height: 40px;
+            background-color: pink;
+        }
+
+        .item-05 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(255, 163, 179);
+        }
+
+        .item-06 {
+            width: 60px;
+            height: 80px;
+            background-color: rgb(255, 140, 159);
+        }
+
+        .align-content {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(244, 223, 255);
+            padding: 10px;
+            margin: 10px;
+
+            display: flex;
+            justify-content: space-evenly;
+
+            align-content: center;
+        }
+
+        #align-content-linha {
+            flex-flow: row wrap;
+        }
+
+        #align-content-coluna {
+            /*flex-flow: column wrap;*/
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .exemplo-gap {
+            width: 750px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+
+        .item-gap {
+            width: 50px;
+            background-color: pink;
+        }
+
+        .conteiner-gap {
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            background-color: rgb(255, 226, 231);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        #com-gap {
+            gap: 40px 20px;
         }
 
     </style>
@@ -79,33 +212,197 @@
         </div>
 
         <h2>Propriedades do contêiner</h2>
-        <h3>flex-direction</h3>
+
+        <h3>Propriedade flex-direction</h3>
+        <p>Define a direção do eixo principal.</p>
         <ul>
             <li><code>row</code> (valor padrão)</li>
             <li><code>row-reverse</code></li>
             <li><code>column</code></li>
             <li><code>column-reverse</code></li>
         </ul>
-
-        <br>
-
         <p>Exemplo: <code>flex-direction: column</code></p>
         <div id="flex-direction-1">
             <div class="item">Item 01</div>
             <div class="item">Item 02</div>
             <div class="item">Item 03</div>
         </div>
-
-        <p>Exemplo: <code>flex-direction: column-reverse</code></p>
-
+        <p>Exemplo: <code>flex-direction: column-reverse;</code>.</p>
         <div id="flex-direction-2">
             <div class="item">Item 01</div>
             <div class="item">Item 02</div>
             <div class="item">Item 03</div>
         </div>
 
-        <h3></h3>
-        
+        <h3>Propriedade flex-wrap</h3>
+        <p>Permite quebra de linha.</p>
+        <ul>
+            <li><code>nowrap</code> (valor padrão)</li>
+            <li><code>wrap</code></li>
+            <li><code>wrap-reverse</code></li>
+        </ul>
+        <p>Exemplo: <code>flex-wrap: nowrap;</code>.</p>
+        <div id="nowrap">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+            <div class="item">Item 04</div>
+            <div class="item">Item 05</div>
+            <div class="item">Item 06</div>
+        </div>
+        <p>Exemplo: <code>flex-wrap: wrap;</code>.</p>
+        <div id="wrap">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+            <div class="item">Item 04</div>
+            <div class="item">Item 05</div>
+            <div class="item">Item 06</div>
+        </div>
+
+        <h3>Propriedade flex-flow</h3>
+        <p>É uma propriedade shorthand das propriedades <code>flex-direction</code> e <code>flex-wrap</code>.</p>
+        <p>Exemplo: <code>flex-flow: row wrap;</code>.</p>
+        <div id="flex-flow">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+            <div class="item">Item 04</div>
+            <div class="item">Item 05</div>
+            <div class="item">Item 06</div>
+        </div>
+
+        <h3>Propriedade justify-content</h3>
+        <p>Alinha os itens flexiveis pelo <strong>eixo principal</strong>.</p>
+        <ul>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>space-between</code></li>
+            <li><code>space-around</code></li>
+            <li><code>space-evenly</code></li>
+        </ul>
+
+        <p>Exemplo: com <code>flex-flow: row wrap;</code> e <code>justify-content: space-between;</code></p>
+        <div class="justify-content" id="justify-content-linha">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+
+        <p>Exemplo: com <code>flex-flow: column wrap;</code> e <code>justify-content: space-between;</code></p>
+        <div class="justify-content" id="justify-content-coluna">
+            <div class="item">Item 01</div>
+            <div class="item">Item 02</div>
+            <div class="item">Item 03</div>
+        </div>
+
+        <h3>Propriedade align-itens</h3>
+        <p>Alinha os elementos no <strong>eixo transversal</strong>.</p>
+        <ul>
+            <li><code>stretch</code></li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+        </ul>
+
+        <div class="exemplos">
+            <div>
+                <p>Exemplo de <code>flex-direction: row;</code> e <code>align-items: center;</code>.</p>
+                <div class="align-itens" id="align-itens-linha">
+                    <div class="item-04">Item 04</div>
+                    <div class="item-05">Item 05</div>
+                    <div class="item-06">Item 06</div>
+                </div>
+            </div>
+            <div>
+                <p>Exemplo de <code>flex-direction: column;</code> e <code>align-items: center;</code>.</p>
+                <div class="align-itens" id="align-itens-coluna">
+                    <div class="item-04">Item 04</div>
+                    <div class="item-05">Item 05</div>
+                    <div class="item-06">Item 06</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Propriedade align-content</h3>
+        <p></p>
+
+        <div class="exemplos">
+            <div>
+                <p>Exemplo com <code>flex-flow: row wrap;</code> e <code>align-content: center;</code>.</p>
+                <div class="align-content" id="align-content-linha">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                    <div class="item">Item 05</div>
+                    <div class="item">Item 06</div>
+                    <div class="item">Item 07</div>
+                    <div class="item">Item 08</div>
+                    <div class="item">Item 09</div>
+                    <div class="item">Item 10</div>
+                </div>
+            </div>
+            <div>
+                <p>Exemplo com <code>flex-flow: column wrap;</code> e <code>align-content: center;</code>.</p>
+                <div class="align-content" id="align-content-coluna">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                    <div class="item">Item 05</div>
+                    <div class="item">Item 06</div>
+                    <div class="item">Item 07</div>
+                    <div class="item">Item 08</div>
+                    <div class="item">Item 09</div>
+                    <div class="item">Item 10</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>Propriedade gap</h3>
+        <p>Cria um espaço entre os itens de um contêiner.</p>
+
+        <div class="exemplo-gap">
+            <div>
+                <p>Sem gap.</p>
+                <div class="conteiner-gap">
+                    <div class="item-gap">Item 01</div>
+                    <div class="item-gap">Item 02</div>
+                    <div class="item-gap">Item 03</div>
+                    <div class="item-gap">Item 04</div>
+                    <div class="item-gap">Item 05</div>
+                    <div class="item-gap">Item 06</div>
+                    <div class="item-gap">Item 07</div>
+                    <div class="item-gap">Item 08</div>
+                </div>
+            </div>
+            <div>
+                <p>Com gap. <code>gap: 40px 20px;</code></p>
+                <div class="conteiner-gap" id="com-gap">
+                    <div class="item-gap">Item 01</div>
+                    <div class="item-gap">Item 02</div>
+                    <div class="item-gap">Item 03</div>
+                    <div class="item-gap">Item 04</div>
+                    <div class="item-gap">Item 05</div>
+                    <div class="item-gap">Item 06</div>
+                    <div class="item-gap">Item 07</div>
+                    <div class="item-gap">Item 08</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Propriedades dos itens</h2>
+
+        <h3>Propriedade flex</h3>
+        <p>Faz com que os itens cresçam para ocupar espaços que sobraram ao longo do eixo principal.</p>
+        <div class="exemplo-flex-grow">
+            <div>
+
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
