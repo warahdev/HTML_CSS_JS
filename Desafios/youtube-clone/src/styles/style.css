@@ -1,0 +1,180 @@
+@import url(reset.css);
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+#header-left a{
+    text-decoration: none;
+    padding-right: 20px;
+    align-items: center;
+}
+
+#header-center {
+    align-items: center;
+}
+
+#header-right {
+    display: flex;
+    gap: 0px 25px;
+    align-items: center;
+
+}
+#header-right #profile{
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* MAIN */
+main {
+    background-color: #f9f9f9;
+}
+
+#container-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+}
+
+#primary-column {
+    width: 960px;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+#secondary-column {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.videos {
+   display: flex;
+   flex-flow: row wrap;
+   gap: 0px 8px;
+   margin-bottom: 5px;
+}
+
+.descricao{
+    width: 175px;
+   font-size: 13px;
+   display: flex;
+   flex-flow: column wrap;
+   gap: 4px;
+   
+}
+
+strong {
+    font-weight: bold;
+}
+
+.descricao-informacao {
+    font-size: 12px;
+    color: rgb(136, 136, 136);
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+#secondary-column div img{
+    width: 165px;
+    border-radius: 5px;
+}
+
+#titulo-video {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+
+#video-principal-dados {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0px 40px;
+    align-items: center;
+}
+
+#canal {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#canal img {
+    width: 50px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#canal-dados {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 14px;
+    gap: 5px;
+}
+
+#nome-canal {
+    font-weight: bold;
+}
+
+#botao-inscrever {
+    color: white;
+    background-color: #cc0000;
+    border: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+
+#outros-botoes {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 13px;
+    align-content: center;
+    gap: 10px;
+}
+
+.botoes {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.icone {
+    width: 20px;
+}
+
+#video-principal-descricao {
+    font-size: 14px;
+    width: 600px;
+
+}
+
+#primeira-linha {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
