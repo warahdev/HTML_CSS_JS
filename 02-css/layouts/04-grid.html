@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <title>Grid</title>
+    <style>
+        @import url(src/styles/global.css);
+
+        #exemplo-grid {
+            width: 600px;
+            border: 2px solid #4f0080;
+            padding: 5px;
+        }
+
+        .container-01 {
+            display: grid;
+            border: 2px solid #c184e7;
+            margin: 5px;
+        }
+
+        #exemplo-inline-grid {
+            width: 600px;
+            border: 2px solid #bd3d8a;
+            padding: 5px;
+        }
+
+        .container-02 {
+            display: inline-grid;
+            border: 2px solid #ffc0e6;
+            margin: 5px;
+        }
+
+        .item {
+            margin: 5px;
+            background-color: rgb(227, 237, 255);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grid</h1>
+        <p>Introduz um sistema de grade bidimensional ao CSS.</p>
+    </header>
+    <main>
+
+        <p>Exemplo com <code>display: grid;</code>.</p>
+        <div id="exemplo-grid">
+            <div class="container-01">
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+                <div class="item">Item 04</div>
+            </div>
+            <div class="container-01">
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+                <div class="item">Item 04</div>
+            </div>
+        </div>
+
+        <p>Exemplo com <code>display: inline-grid;</code>.</p>
+        <div id="exemplo-inline-grid">
+            <div class="container-02">
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+                <div class="item">Item 04</div>
+            </div>
+            <div class="container-02">
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+                <div class="item">Item 04</div>
+            </div>
+        </div>
+        
+        <h2>Adicionando colunas e linhas ao Grid</h2>
+        
+
+    </main>
+</body>
+</html>
