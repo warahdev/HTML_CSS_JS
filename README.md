@@ -12,7 +12,7 @@ Para manter tudo organizadinho e fácil de encontrar, separei os arquivos nas se
 
 * **`html/`**: Aqui você encontra meus primeiros passos e experimentos com HTML.
 * **`css/`**: Nesta pasta, brinco com estilos e cores para deixar tudo visualmente agradável.
-* **`js/`**: Onde a mágica acontece! Esta pasta guarda meus estudos sobre a lógica e interatividade do JavaScript.
+* **`js/`**: Esta pasta guarda meus estudos sobre a lógica e interatividade do JavaScript.
 * **`desafios/`**: Os desafios que encarei para testar e aprimorar meus conhecimentos.
 
 ---
@@ -25,7 +25,7 @@ Sinta-se à vontade para explorar e ver o que estou aprendendo! Se tiver alguma 
 
 ## 🌸 Meus objetivos
 
-Meu objetivo é continuar aprimorando minhas habilidades e, quem sabe, um dia criar projetos incríveis e poder ajudar os demais!
+Meu objetivo é continuar aprimorando minhas habilidades e um dia criar projetos incríveis para poder ajudar os demais!
 
 Penso em poder complementar com um blog também... mas só daqui um tempo...
 
