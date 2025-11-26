@@ -8,41 +8,260 @@
     <style>
         @import url(src/styles/global.css);
 
-        #exemplo-grid {
-            width: 600px;
-            border: 2px solid #4f0080;
-            padding: 5px;
+        :root {
+            --primary-color:#ffe4f3;
+            --border-color-primary: #ffa7dc;
+            --border-color-secondary:#d38bed;
         }
 
-        .container-01 {
-            display: grid;
-            border: 2px solid #c184e7;
+        main {
+
+
+
+            .item {
             margin: 5px;
-        }
+            background-color: var(--primary-color);
+            }
 
-        #exemplo-inline-grid {
-            width: 600px;
-            border: 2px solid #bd3d8a;
-            padding: 5px;
-        }
+            .container {
+                width: 600px;
+                border: 2px solid var(--border-color-primary);
+                margin: 5px;
+            }
 
-        .container-02 {
-            display: inline-grid;
-            border: 2px solid #ffc0e6;
-            margin: 5px;
-        }
+            #apresentacao-tema { /* aprensentacao sobre Gid, algunas exemplos usando os valores 'grid' e  'inline-grid' na propriedade 'display' */
+                .container-01 {
+                    display: grid; /* os itens são alinhados em coluna */
+                    border: 2px solid var(--border-color-primary);
+                    margin: 5px;
+                }
 
-        .item {
-            margin: 5px;
-            background-color: rgb(227, 237, 255);
-        }
+                .container-02 {
+                    display: inline-grid; /* os itens são alinhados em linha */
+                    border: 2px solid var(--border-color-primary);
+                    margin: 5px;
+                }
+            }
 
-        .container-03 {
-            width: 600px;
-            display: grid;
-            border: 2px solid #caa7ff;
-            margin: 5px;
-            grid-template-columns: 50% 20% 30%;
+            #topico-adicionando-colunas-e-linhas { /* primeiro tópico sobre inclusão de colunas e linhas no Gid */
+                .container-03 {
+                    display: grid;
+                    grid-template-columns: 50% 20% 30%; /* definindo 3 colunas */
+                }
+
+                .container-04 {
+                    display: grid;
+                    grid-template-rows: 1fr 4fr 2fr; /* definindo 3 linhas */
+                }
+
+                #container-repeat-columns {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1.5fr 3fr);
+                }
+
+                #container-repeat-rows {
+                    display: grid;
+                    grid-template-rows: repeat(2, 2rf 1fr 3fr);
+                }
+
+                #container-sem-auto-fit {
+                    border: 1px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(6, minmax(200px, 1fr));
+                }
+
+                #container-com-auto-fit {
+                    border: 1px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                }
+
+                #container-sem-auto-fill {
+                    border: 1px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(200px, 1fr));
+                }
+
+                #container-com-auto-fill {
+                    border: 1px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                }
+                
+            }
+
+            #topico-posicionando-itens {
+                .container-posicao{
+                    width: 600px;
+                    border: 2px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+                    grid-template-rows: 25px 50px 100px;
+                }
+
+                #item-posicao-coluna {
+                    background-color: var(--primary-color);
+
+                    /* grid-column-start: 2;
+                    grid-column-end: 5; */
+                    grid-column: 2 / 5;
+                }
+
+                #item-posicao-linha {
+                    background-color: var(--primary-color);
+
+                    /* grid-row-start: 2;
+                    grid-row-end: 3; */
+                    grid-row: 2 / 3;
+                }
+
+                #item-posicao-exercicio-01 {
+                    background-color: var(--primary-color);
+                    /* grid-column-start: 1;
+                    grid-column-end: 4;   outro modo: grid-column-end: span 3; (irá ocupar 3 colunas/espaços) */
+                    grid-column: 1 / 4; /* ou grid-column: span 3; (a partir de onde o item está e preencher o espaço */
+
+                    /* grid-row-start: 2;
+                    grid-row-end: 4;   outro modo: grid-row-end: span 2; */
+                    grid-row: 2 / 4;
+                }
+                
+                #container-posicao-exercicio-02  {
+                    width: 200px;
+                    height: 200px;
+                    border: 2px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                
+                    #item-posicao-exercicio-02 {
+                        background-color: var(--primary-color);
+                        grid-column: 2 / span 1;
+                        grid-row: 2 / span 1;
+                    }
+                }
+
+                #container-posicao-exercicio-03 {
+                    width: 300px;
+                    height: 200px;
+                    border: 2px solid var(--border-color-primary);
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+
+                    #item-posicao-exercicio-03 {
+                        background-color: var(--primary-color);
+                        grid-column: 3 / span 1;
+                        grid-row: 2 / span 1;
+                    }
+                }
+            
+            }
+
+            #topico-area {
+                #grid-area-exemplo-body {
+                    margin: 0;
+                    display: grid;
+                    width: 500px;
+                    height: 600px;
+                    border: 2px solid var(--border-color-primary);
+                    grid-template-columns: 1fr 350px;
+                    grid-template-rows: 100px 3fr 1fr;
+                    grid-template-areas: 
+                        "header header"
+                        "nav main"
+                        "footer footer"
+                    ;
+
+                    #grid-area-exemplo-header {
+                        background: var(--primary-color);
+                        grid-area: header;
+                    }
+
+                    #grid-area-exemplo-nav {
+                        background: #e0b4cf;
+                        grid-area: nav;
+                    }
+
+                    #grid-area-exemplo-main {
+                        background: #fbc1d2;
+                        grid-area: main;
+                    }
+
+                    #grid-area-exemplo-footer {
+                        background: #eccff7;
+                        grid-area: footer;
+                    }
+                }
+            }
+
+            #topico-alinhamento-itens {
+                .alinhamento-exemplo{
+                    display: grid;
+                    width: 1000px;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+
+                    gap: 20px 40px;
+
+                    .align-items-exemplo{
+                        display: grid;
+                        height: 100px;
+                        grid-template-columns: repeat(3, 1fr);
+                        border: 2px solid var(--border-color-primary);
+                    }
+
+                    #align-items-exemplo-stretch {
+                        align-items: stretch;
+                    }
+
+                    #align-items-exemplo-start {
+                        align-items: start;
+                    }
+
+                    #align-items-exemplo-end {
+                        align-items: end;
+                    }
+
+                    #align-items-exemplo-center {
+                        align-items: center;
+                    }
+
+                    .justify-items-exemplo{
+                        display: grid;
+                        height: 100px;
+                        grid-template-columns: repeat(3, 1fr);
+                        border: 2px solid var(--border-color-primary);
+                    }
+
+                    #justify-items-exemplo-stretch {
+                        justify-items: stretch;
+                    }
+
+                    #justify-items-exemplo-start {
+                        justify-items: start;
+                    }
+
+                    #justify-items-exemplo-end {
+                        justify-items: end;
+                    }
+
+                    #justify-items-exemplo-center {
+                        justify-items: center;
+                    }
+
+                    .place-items-exemplo{
+                        display: grid;
+                        height: 100px;
+                        grid-template-columns: 1fr;
+                        border: 2px solid var(--border-color-primary);
+                    }
+
+                    #place-items-exemplo-stretch {
+                        place-items: end center;
+                    }
+                }
+            }
 
         }
 
@@ -54,48 +273,259 @@
         <p>Introduz um sistema de grade bidimensional ao CSS.</p>
     </header>
     <main>
+        <section id="apresentacao-tema"> <!-- aprensentacao sobre Gid, algunas exemplos usando os valores 'grid' e  'inline-grid' na propriedade 'display' -->
+            <p>Exemplo com <code>display: grid;</code>.</p>
+            <div class="container">
+                <div class="container-01">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                </div>
+                <div class="container-01">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                </div>
+            </div>
 
-        <p>Exemplo com <code>display: grid;</code>.</p>
-        <div id="exemplo-grid">
-            <div class="container-01">
-                <div class="item">Item 01</div>
-                <div class="item">Item 02</div>
-                <div class="item">Item 03</div>
-                <div class="item">Item 04</div>
+            <p>Exemplo com <code>display: inline-grid;</code>.</p>
+            <div class="container">
+                <div class="container-02">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                </div>
+                <div class="container-02">
+                    <div class="item">Item 01</div>
+                    <div class="item">Item 02</div>
+                    <div class="item">Item 03</div>
+                    <div class="item">Item 04</div>
+                </div>
             </div>
-            <div class="container-01">
-                <div class="item">Item 01</div>
-                <div class="item">Item 02</div>
-                <div class="item">Item 03</div>
-                <div class="item">Item 04</div>
-            </div>
-        </div>
+        </section>
 
-        <p>Exemplo com <code>display: inline-grid;</code>.</p>
-        <div id="exemplo-inline-grid">
-            <div class="container-02">
+        <section id="topico-adicionando-colunas-e-linhas"> <!-- primeiro tópico sobre inclusão de colunas e linhas no Gid -->
+            <h2>Adicionando colunas e linhas no Grid</h2>
+            <h3>Inclusão de colunas</h3>
+            <p>Utilizando <code>grid-template-columns: 50% 20% 30%;</code>:</p>
+            <div class="container" id="container-03">    
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+            </div>
+
+            <h3>Inclusão de linhas</h3>
+            <p>Utilizando <code>grid-template-rows: 1fr 4fr 2fr;</code>.</p>
+            <div class="container" id="container-04">    
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+            </div>
+
+            <h3>Com a função repeat</h3>
+            <p>A função <code>repeat()</code> é usada para repetir um conjunto de colunas ou linhas em um Grid.</p>
+            <p>Exemplo utilizando <code>grid-template-columns: repeat(3, 1.5fr 3fr);</code>.</p> <!-- 2 * 2fr 1fr 3fr -->
+            <div class="container" id="container-repeat-columns">    
                 <div class="item">Item 01</div>
                 <div class="item">Item 02</div>
                 <div class="item">Item 03</div>
                 <div class="item">Item 04</div>
+                <div class="item">Item 05</div>
+                <div class="item">Item 06</div>
             </div>
-            <div class="container-02">
+            <br>
+
+            <p>Exemplo utilizando <code>grid-template-rows: repeat(2, 2fr 1fr 3fr);</code>.</p> <!-- 2 * 2fr 1fr 3fr -->
+            <div class="container" id="container-repeat-rows">    
                 <div class="item">Item 01</div>
                 <div class="item">Item 02</div>
                 <div class="item">Item 03</div>
                 <div class="item">Item 04</div>
+                <div class="item">Item 05</div>
+                <div class="item">Item 06</div>
             </div>
-        </div>
+
+            <h3>Auto-fit</h3>
+            <p>Encaixa as colunas atualmente disponíveis no espaço expandindo-as para que ocupem qualquer espaço disponível.</p>
+
+            <p>Sem o auto-fit, <code>grid-template-columns: repeat(6, minmax(200px, 1fr));</code>.</p>
+            <div id="container-sem-auto-fit">    
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+                <div class="item">Item 04</div>
+                <div class="item">Item 05</div>
+                <div class="item">Item 06</div>
+                <div class="item">Item 07</div>
+            </div>
+            <br>
+            <p>Com o auto-fit, <code>grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</code>.</p>
+            <div id="container-com-auto-fit">    
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+                <div class="item">Item 04</div>
+                <div class="item">Item 05</div>
+                <div class="item">Item 06</div>
+                <div class="item">Item 07</div>
+            </div>
+
+            <h3>Auto-fill</h3>
+            <p>Preenche a linha com quantas colunas couberem.</p>
+            <p>Sem o auto-fill, <code>grid-template-columns: repeat(3, minmax(200px, 1fr));</code>.</p>
+            <div id="container-sem-auto-fill">    
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+            </div>
+            <br>
+            
+            <p>Com o auto-fill, <code>grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));</code>.</p>
+            <div id="container-com-auto-fill">    
+                <div class="item">Item 01</div>
+                <div class="item">Item 02</div>
+                <div class="item">Item 03</div>
+            </div>
+            
+
+
+        </section>
+
+        <section id="topico-posicionando-itens"> <!-- segundo tópico sobre alocação de itens no Grid nas posições específicas -->
+            <h2>Posicionando os itens do Grid</h2>
+            <h3>Column</h3>
+            <p>Exemplo com <code>grid-column: 2 / 5;</code>.</p>
+            <div class="container-posicao">    
+                <div id="item-posicao-coluna">Item 01</div>
+            </div>
+
+            <h3>Row</h3>
+            <p>Exemplo com <code>grid-row: 2 / 3;</code>.</p>
+            <div class="container-posicao">    
+                <div id="item-posicao-linha">Item 01</div>
+            </div>
+
+            <h3>Exercício:</h3>
+            <div class="container-posicao"> <!-- exercício 01 --> 
+                <div id="item-posicao-exercicio-01">Item 01</div>
+            </div>
+            <br>
+            <div id="container-posicao-exercicio-02"> <!-- exercício 02 -->
+                <div id="item-posicao-exercicio-02">Item 01</div>
+            </div>
+            <br>
+            <div id="container-posicao-exercicio-03"> <!-- exercício 03 -->
+                <div id="item-posicao-exercicio-03">Item 01</div>
+            </div>
+
+            <h3>Outro jeito..</h3>
+            <p>O <code>grid-area</code> é um shorthand de outras propriedades, ou seja, podemos definir os valores das propriedades <code>grid-column</code> e <code>grid-row</code> de uma só vez.</p>
+        </section>
+
+        <section id="topico-area">
+            <h2>Areas do Grid</h2>
+
+            <h3>Nomeando áreas do grid</h3>
+            <p>Exemplo utilizando <code>grid-template-areas</code> e <code>grid-area</code>.</p>
+            <div id="grid-area-exemplo-body">
+                <div id="grid-area-exemplo-header">header</div>
+                <div id="grid-area-exemplo-nav">nav</div>
+                <div id="grid-area-exemplo-main">main</div>
+                <div id="grid-area-exemplo-footer">footer</div>
+            </div>
+
+        </section>
+
+        <section id="topico-alinhamento-itens">
+            <h2>Alinhamento dos itens do Grid</h2>
+
+            <h3>align-items</h3>
+            <div class="alinhamento-exemplo">
+                <div>
+                    <code>align-items: stretch;</code> &lpar;valor padrão&rpar;.
+                    <div class="align-items-exemplo" id="align-items-exemplo-stretch">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+                <div>
+                    <code>align-items: start;</code>.
+                    <div class="align-items-exemplo" id="align-items-exemplo-start">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+                <div>
+                    <code>align-items: end;</code>.
+                    <div class="align-items-exemplo" id="align-items-exemplo-end">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+                <div>
+                    <code>align-items: center;</code>.
+                    <div class="align-items-exemplo" id="align-items-exemplo-center">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>justify-items</h3>
+            <div class="alinhamento-exemplo">
+                <div>
+                    <code>justify-items: stretch;</code> &lpar;valor padrão&rpar;.
+                    <div class="justify-items-exemplo" id="justify-items-exemplo-stretch">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+                <div>
+                    <code>justify-items: start;</code>.
+                    <div class="justify-items-exemplo" id="justify-items-exemplo-start">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+                <div>
+                    <code>justify-items: end;</code>.
+                    <div class="justify-items-exemplo" id="justify-items-exemplo-end">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+                <div>
+                    <code>justify-items: center;</code>.
+                    <div class="justify-items-exemplo" id="justify-items-exemplo-center">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>place-items</h3>
+            <div class="alinhamento-exemplo">
+                <div>
+                    <code>place-items: end center;</code>.
+                    <div class="place-items-exemplo" id="place-items-exemplo-stretch">
+                        <div class="item">Item Um</div>
+                        <div class="item">Item Dois</div>
+                        <div class="item">Item três</div>
+                    </div>
+                </div>
+        </section>
         
-        <h2>Adicionando colunas e linhas ao Grid</h2>
-        <p>Quando há inclusão de colunas:</p>
-        <div class="container-03">    
-            <div class="item">Item 01</div>
-            <div class="item">Item 02</div>
-            <div class="item">Item 04</div>
-        </div>
-
-
     </main>
 </body>
 </html>
