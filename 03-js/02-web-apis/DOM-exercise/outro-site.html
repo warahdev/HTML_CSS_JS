@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-dois.css"> <!--linkando com um arquivo exeterno css-->
+    <title>Feira Maluca</title>
+</head>
+<body>
+    <div class="top-saudacao">
+        <p id="saudacao">Olá, </p> <!--saudacao em DOM-->
+    </div>
+
+    <header>
+        <h1 id="titulo">Feira</h1>
+    </header>
+    <main class="corpo">
+        <button onclick="mensagem()">Dica do dia</button> <!--iniciando uma funcao do js para quando o botão for clicado-->
+        <h2>Frutas</h2>
+        <p>Algumas são muito populares, outras mais raras e exóticas, mas não é segredo para ninguém que as frutas são alimentos saudáveis e podem ser incluídas em todas as refeições. Desde o café da manhã até a ceia antes de dormir. Além de serem excelentes fontes de energia, ajudam também a liberar as toxinas do nosso organismo e reforçar o sistema imunológico.</p>
+        <img src="Imagens/frutas.jpg" alt="imagem de frutas" class="imagem-conteudo">
+        <p>Benefícios:</p>
+        <ul> <!--lista não ordenada-->
+            <li>Auxiliam no controle do peso;</li>
+            <li>Diminuem os níveis de colesterol “ruim”;</li>
+            <li>Fortalecer o sistema imunológico;</li>
+        </ul>
+        <h2>Contato</h2>
+        <form id="informacoes"> <!--formulário-->
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required> <!--tipo text e verificação se foi preenchido-->
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> <!--tipo email e verificação se foi preenchido-->
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea> <!--tipo message e verificação se foi preenchido-->
+
+            <input type="submit" value="Enviar"> <!--submissão das informações-->
+        </form>
+    </main>
+    <footer>
+        <p>2024 - Feita Maluca. Todos os direitos reservados.</p>
+    </footer>
+    <script src="main.js"></script> <!--linkando com arquivo js no final do html pois isso não atrapalha na inicialização do html-->
+</body>
+</html>
