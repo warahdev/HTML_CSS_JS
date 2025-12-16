@@ -1,3 +1,4 @@
+// Prática com operadores e condicionais
 // Exercicio 01
 
 // Faça um algoritmo que dado as 3 notas tiradas por um aluno em um sementre da faculdade, calcule e imprima sua média e
